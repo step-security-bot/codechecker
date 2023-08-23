@@ -11,8 +11,8 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v4
+      - uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2.7.0
+      - uses: actions/setup-python@61a6322f88396a6271a6ee3565807d608ecaddd1 # v4.7.0
         with:
           python-version: '3.8'
       - name: Install dependencies
@@ -26,12 +26,12 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v4
+      - uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2.7.0
+      - uses: actions/setup-python@61a6322f88396a6271a6ee3565807d608ecaddd1 # v4.7.0
         with:
           python-version: '3.8'
       - name: Setup Bazel
-        uses: abhinavsingh/setup-bazel@v3
+        uses: abhinavsingh/setup-bazel@1fe920bf5df3791aab606c06a3608f4bb600c4f2 # v3
         with:
           version: 4.0.0
       - name: Install common dependencies
@@ -82,8 +82,8 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v4
+      - uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2.7.0
+      - uses: actions/setup-python@61a6322f88396a6271a6ee3565807d608ecaddd1 # v4.7.0
         with:
           python-version: '3.8'
 
@@ -108,8 +108,8 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v4
+      - uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2.7.0
+      - uses: actions/setup-python@61a6322f88396a6271a6ee3565807d608ecaddd1 # v4.7.0
         with:
           python-version: '3.8'
 
@@ -144,8 +144,8 @@ jobs:
         database: [sqlite, psql_pg8000, psql_psycopg2]
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v4
+      - uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2.7.0
+      - uses: actions/setup-python@61a6322f88396a6271a6ee3565807d608ecaddd1 # v4.7.0
         with:
           python-version: '3.8'
 
@@ -185,11 +185,11 @@ jobs:
         browser: [firefox]
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v4
+      - uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2.7.0
+      - uses: actions/setup-python@61a6322f88396a6271a6ee3565807d608ecaddd1 # v4.7.0
         with:
           python-version: '3.8'
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@f1f314fca9dfce2769ece7d933488f076716723e # v1.4.6
         with:
           node-version: '16.x'
 

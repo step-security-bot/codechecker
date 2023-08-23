@@ -26,8 +26,8 @@ jobs:
     name: "Config coverage of checkers"
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
+      - uses: actions/setup-python@61a6322f88396a6271a6ee3565807d608ecaddd1 # v4.7.0
         with:
           python-version: '3.8'
       - name: "Install dependencies"
@@ -46,7 +46,7 @@ jobs:
       # We do this BEFORE grabbing Clang, so a potentially broken Clang binary
       # won't miscompile Cppcheck itself.
       - name: "Download Cppcheck source code"
-        uses: actions/checkout@v3
+        uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
         with:
           repository: "danmar/cppcheck"
           path: "cppcheck"

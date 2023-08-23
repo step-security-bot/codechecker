@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: snapcore/action-build@v1
+      - uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2.7.0
+      - uses: snapcore/action-build@3457752ec9b1c79a8290b5167fce2d14df0997c1 # v1.1.2
         id: build
-      - uses: snapcore/action-publish@v1
+      - uses: snapcore/action-publish@0a8d537ae06f4a292e8b4ef1084cd5631b3c6871 # v1.1.1
         env:
           SNAPCRAFT_STORE_CREDENTIALS: ${{ secrets.SNAP_TOKEN }}
         with:
